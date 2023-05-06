@@ -1,0 +1,25 @@
+                                                   Iterable(I)
+
+                                                    Collection(I)
+
+     List(I)                                       Queue(I)                                        Set(I)
+      - ArrayList(c)                                   -PriorityQueue(c)                            -HashSet(c)
+      - LinkedList(c)                              Deque(I)                                         -LinkedHashSet
+      - Vector(c)                                        -ArrayDeque                                    -TreeSet
+          - Stack
+
+
+
+
+/// arrrayList ,LInked List, HashSet, HashMap  very very IMP
+
+## IMP Question for interview
+
+Explain collection framework
+internal  working  of arraylist. hashmap, hashset
+difference between arraylist vs Linked List vs vector
+difference between hashset vs hashMap
+
+// comparable and comparator , generics
+
+

@@ -1,0 +1,15 @@
+Cursors -> Iterator ,ListIterator , Enumeration
+
+             Iterator                                   ||             ListIterator
+1.We can get Iterator cursor by  iterator() method.         1.We can get ListIterator cursor by ListIterator() Method.
+   Ex-  Iterator itr=l.iterator()                              Ex-  ListIterator li=l.lisIterator()
+2.Iterator cursor can be used with any collection object.   2.ListIterator cursor can be used only with List implemented class i.e
+                                                                ArrayList,LinkedList,Vector, stack.
+3.Iterator methods are- hasNext(), next(),remove().          3.ListIterator methods are- hasNext(),next(),hasPrevious(),previous(),remove(),set().
+4.By using Iterator cursor ,we can retrieve the element      4.By using ListIterator we can retrieve the elements in forward and backward direction.
+  only in forward direction.
+5.BY using Iterator cursor , we can read and remove the      5.By using ListIterator cursor we can read,remove,replace and add the elements.
+  elements.
+
+
+  hasNext()-> check is next value is present or not

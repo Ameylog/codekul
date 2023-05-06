@@ -1,0 +1,54 @@
+### Thread Methods ###
+
+1) Basic Method:-
+  $ methods:-  run() , start(), currentThread(), isAlive()
+
+2) Naming Method:-
+ $ methods :- getName() , SetName(String Name),
+
+3) Demon Method:-
+(Which run in the background of another thread)
+(use:- It provides service to the threads)(it is depends on another thread)
+(is inherit properties of parent class. Most of time its low priority. we can change priority)
+(eg:-Garbage collector ,finalize,attach listens, signal dispatcher)
+
+ $ methods:- isDemon() ,setDemon(boolean b)
+
+4) Priority based Method:-
+[[(( set priorities are represented in the form of integer value which range from 1-10
+         1-> MIN_PRIORITY
+         5-> NoRM_PRIORITY
+         10-> MAX_PRIORITY
+         above are onlY given in java
+
+        ** Below are not the  priorities
+         0, <1 , >10
+         MINIMUN_PRIPORITY
+         LOW_PRIORITY
+         MIDIUM_PRIORITY
+         MAXIMUM_PRIORITY
+         HIGH_PRIORITY
+
+ Windows are not support Priority ))]]
+
+ $ methods:- getPriority() , setPriority()
+
+
+5) Preventing thread Execution Method:-
+ $ methods:-sleep() , yield() , join()
+
+6) Interrupting the thread Method:-
+  $ methods:- intrupt() , isInterrupted(), interrupted()
+
+
+### Thread Constructor ###
+
+1)Thread()
+2)Thread(Runnable target)
+3)Thread(String name)
+4)Thread(Runnable target, String name)
+   // Thread group constructor
+5)Thread(ThreadGroup tg,Runnable target)
+6)Thread(ThreadGroup tg,String name)
+7)Thread(ThreadGroup tg,Runnable target,String name)
+8)Thread(ThreadGroup tg,Runnable target,String name,long Stacksize)

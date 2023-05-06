@@ -1,0 +1,11 @@
+                 List                                 Set
+1.List is index based Data structure.         1.Set is not an index based Data structure .It stores the data according to the hashcode values.
+2.List can store duplicate elements           2.Set does not allow to store duplicate elements.
+3.List can store amy number of null values.   3.Set can store only one null value.
+4.List follows the insertion order.           4.Set does not follows the insertion order.
+5.we can iterate(get) the list elements by    5.we cam iterate the set element by Iterator.
+  Iterator and ListIterator
+
+
+Iterator -> Iterate only forward direction.
+ListIterator -> Iterate both (forward and backward ) direction.

@@ -1,0 +1,48 @@
+Process---> A program in execution state.
+Thread---> Thread is subpart of process.
+
+import java.lang.*;    ( thread and runnable present in lang package)
+
+only run method in presnet runnable interface.
+
+Thread Life cycle:-
+step1:- create new thread ( because step 3)
+step2:- Runnable  ( because of step4)
+step3:- Running (JVM allocate process)
+Step4:- dead (when task is complete)
+step5:- sleep , waiting, suspend()
+
+			    Jvm allocate task		when task complete
+create------> Runnable--------------------> Running---------------->dead
+			^					              |
+			|----	non runnable task----	<-
+
+			     SLEEP ,Waiting ,suspend()
+
+
+Two ways to implement thread:-
+1.Thread(class)
+2.Runnable(Interface)  // Better Way to implement Thread
+ (because multiple implements many class)
+
+1.Steps to implement thread using thread class
+step1:- class Extend Thread class.
+step2:- override the run method and write the task inside run method.
+step3:- create an object of class
+step4:- start the thread.
+
+2. create thread using runnable interface.
+step1:- Implement the runnable interface.
+step2:- override(create) the run method.
+// Start method not present in runnable interface .
+step3:- create the object of class.
+step4:- create thread class object and passing the parameter of the current class object.
+step5:- call start method through thread class.
+
+Questions ???
+what is multi threading ?
+how to achieve multithreading ?
+obj.run run normal method so dont write obj.run
+producer consumer
+deadlock
+syncronanlize :- we apply lock by using
