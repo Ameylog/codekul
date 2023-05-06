@@ -7,11 +7,14 @@ import java.util.List;
 /// Method reference to arbitrary type of particular object
 public class MethodRefrence {
 
+    //method ref to arbitrary type of particular object
     public static void main(String[] args) {
-        List<Student> list = Arrays.asList(new Student(1, "Ramesh"), new Student(2, "Rohan"));
-        list.forEach(System.out::println);
 
+        List<Student> list = Arrays.asList(new Student(1,"Ramesh"),new Student(2,"Sahil"));
 
+//        list.forEach(System.out::println);
+
+        list.forEach(Student::getName);
 
     }
 
@@ -28,6 +31,11 @@ public class MethodRefrence {
                     '}';
         }
 
+        public Student(int id, String name) {
+            this.id = id;
+            this.name = name;
+        }
+
         public int getId() {
             return id;
         }
@@ -36,16 +44,11 @@ public class MethodRefrence {
             this.id = id;
         }
 
-        public String getName() {
-            return name;
+        public void getName() {
+            System.out.println("Name=>"+this.name);
         }
 
         public void setName(String name) {
-            this.name = name;
-        }
-
-        public Student(int id, String name) {
-            this.id = id;
             this.name = name;
         }
     }

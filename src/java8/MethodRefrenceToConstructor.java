@@ -8,11 +8,17 @@ public class MethodRefrenceToConstructor {
     }
 
     public static void main(String[] args) {
+        // refer
         MyInterface3 myInterface3=MethodRefrenceToConstructor::new;
+       
+        //callinf
+        myInterface3.methodRefrenecToConstructor();
 
     }
 }
 
 interface MyInterface3{
-    void  show();
+
+    MethodRefrenceToConstructor methodRefrenecToConstructor();
+
 }
